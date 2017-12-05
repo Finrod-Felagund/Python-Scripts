@@ -29,6 +29,7 @@ for n in range (12,15): #Ip address range (last octet)#
                 tn.write("name PYTHON_VLAN_ " + str(n) + "\n")  ##name the vlan#
 
         tn.write("end\n")
+	    	#tn.write("wr\n)
         tn.write("exit\n")
 
         print tn.read_all()

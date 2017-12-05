@@ -25,7 +25,8 @@ for n in range (3,11):          #number of vlans interation#
         tn.write(b"name Python_Vlan_" + str(n) + "\n")	#name each vlan ceated as; Python_Vlan(n)#
 
 tn.write("end\n")
+#tn.write("wr\n)
 tn.write("exit\n")
-#no write all for testing 
+#no write all for testing
 
 print tn.read_all()
