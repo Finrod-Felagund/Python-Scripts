@@ -11,7 +11,7 @@ import telnetlib
 user = raw_input("Username: ")  #enter username once for all targeted switches
 password = getpass.getpass()    #enter password once for all targeted switches
 
-for n in range (12,15): #Ip address range (last octet)#
+for n in range (12,15):    #Ip address range (last octet)#
     print "Telneting  to Host " + str(n)
     HOST = "10.1.1." + str(n)       #Telnet to host .12, next 13, next 14 (until the loop is exhausted)#
     tn = telnetlib.Telnet(HOST)    #tn is the variable for the telnet session#
@@ -24,9 +24,9 @@ for n in range (12,15): #Ip address range (last octet)#
 
     tn.write("conf t\n")
 
-    for n in range (2,21):  #Subloop (loop within a loop), for number of vlans interation#
+    for n in range (2,21):    #Subloop (loop within a loop), for number of vlans interation#
             tn.write("Vlan " + str(n) + "\n")       #configure vlan#
-            tn.write("name PYTHON_VLAN_ " + str(n) + "\n")  ##name the vlan#
+            tn.write("name PYTHON_VLAN_ " + str(n) + "\n")    #name the vlan#
 
     tn.write("end\n")
     #tn.write("wr\n)
