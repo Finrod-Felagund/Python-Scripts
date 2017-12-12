@@ -14,7 +14,7 @@ password = getpass.getpass()    #enter password once for all targeted switches
 for n in range (12,15): #Ip address range (last octet)#
     print "Telneting  to Host " + str(n)
     HOST = "10.1.1." + str(n)       #Telnet to host .12, next 13, next 14 (until the loop is exhausted)#
-    tn = telnetlib.Telnet(HOST)
+    tn = telnetlib.Telnet(HOST)    #tn is the variable for the telnet session#
 
     tn.read_until("Username: ")     #Loop asks for a username#
     tn.write(user + "\n")   #Pass the user variable defined at start of the script#

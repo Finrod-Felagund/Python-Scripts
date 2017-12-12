@@ -16,7 +16,7 @@ f = open ("devicesips")    #open file named devicesips
 for line in f:  #Ip address called from the file#
     print "Configuring Switch " + (line)
     HOST = line #Telnet to hosts in devicesips#
-    tn = telnetlib.Telnet(HOST)
+    tn = telnetlib.Telnet(HOST)    #tn is the variable for the telnet session#
 
     tn.read_until("Username: ") #Loop asks for a username#
     tn.write(user + "\n")       #Pass the user variable defined at start of the script#
