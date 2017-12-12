@@ -29,4 +29,4 @@ tn.write("end\n")
 tn.write("exit\n")
 #no write all for testing
 
-print tn.read_all()
+print tn.read_all()    #Read all data until EOF; block until connection closed.#

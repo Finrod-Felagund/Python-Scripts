@@ -11,7 +11,7 @@ import telnetlib
 user = raw_input("Username: ")  #enter username once for all targeted switches
 password = getpass.getpass()    #enter password once for all targeted switches
 
-f = open ("devicesips")    #open file named devicesips
+f = open ("devicesips")    #open file named devicesips,default optin is read only#
 
 for line in f:  #Ip address called from the file#
     print "Configuring Switch " + (line)
@@ -36,4 +36,4 @@ for line in f:  #Ip address called from the file#
 
     tn.write("exit\n")
 
-    print tn.read_all()
+    print tn.read_all()    #Read all data until EOF; block until connection closed.#

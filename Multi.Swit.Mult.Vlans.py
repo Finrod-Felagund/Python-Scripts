@@ -32,4 +32,4 @@ for n in range (12,15): #Ip address range (last octet)#
     #tn.write("wr\n)
     tn.write("exit\n")
 
-    print tn.read_all()
+    print tn.read_all()    #Read all data until EOF; block until connection closed.#
