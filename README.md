@@ -15,3 +15,9 @@
 6-switchConfis.py: The script will pull the 
 configurations of switches and save
 them to a file.
+
+7-Param-vty: script uses paramiko to ssh
+into network devices and apply configs, 
+configuring vty lines to exclusively accept 
+ssh connection.
+
