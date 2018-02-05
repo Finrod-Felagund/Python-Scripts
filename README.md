@@ -21,3 +21,13 @@ into network devices and apply configs,
 configuring vty lines to exclusively accept 
 ssh connection.
 
+8-Netmiko1: In this script, will ssh to the 
+router using netmiko and configure a loopback 
+interface for management purposes.
+
+9-NetmikoSWITCH: In this script, will ssh to 
+the router using netmiko and configure a loopback 
+interface for management purposes
+Also will configure vlans via a loop.
+
+
