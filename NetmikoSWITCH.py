@@ -2,7 +2,7 @@
 
 from netmiko import ConnectHandler
 
-#In this script, will ssh to the router using netmiko and configure a loopback interface for management purposes#
+#In this script, will ssh to a single device using netmiko and configure a loopback interface for management purposes#
 #Also will configure vlans via a loop#
 
 iosv_l2 = {
