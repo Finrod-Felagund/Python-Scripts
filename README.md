@@ -30,4 +30,12 @@ the router using netmiko and configure a loopback
 interface for management purposes
 Also will configure vlans via a loop.
 
+10-NetmikoMULTIdevice: In this script, will ssh to
+multiple devices using netmiko and create vlans via loop.
+
+11-NetmikoCALLfile: This script ssh to multiple 
+switches and configure two types of ports; access ports & Trunk ports.
+The configuration commands are in another file that will be called in this script.
+
+
 
